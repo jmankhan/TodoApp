@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/todoListItemPriority"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/todoListItemName"
+        android:layout_alignTop="@+id/todoListItemName"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/todoListItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:focusable="false"
+        android:textColor="#000"/>
+
+    <ImageButton
+        android:id="@+id/todoListItemEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/edit"
+        android:scaleType="centerCrop"
+        android:background="#00000000"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:focusable="false"/>
+
+    <ImageButton
+        android:id="@+id/todoListItemDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/trash"
+        android:scaleType="centerCrop"
+        android:background="#00000000"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:focusable="false"
+        android:visibility="gone"/>
+
+</RelativeLayout>

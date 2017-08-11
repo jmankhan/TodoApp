@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jalal.khan.todoapp.MainActivity">
+
+    <ListView
+        android:id="@+id/mainListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+        <EditText
+            android:id="@+id/mainEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/mainEditText"
+            android:imeActionLabel="@string/addButton"
+            android:inputType="text"
+            android:maxLines="1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/mainAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:onClick="beginAddAnimation"
+            android:text="@string/addButton"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/mainAddButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorAccent"
+            android:onClick="addItem"
+            android:text="+"
+            android:textColor="#fff"
+            android:visibility="invisible" />
+</RelativeLayout>
